@@ -77,8 +77,6 @@ pkg_setup() {
 }
 
 pkg_preinst() {
-    ewarn "This is plex 1.3.3 PLEX PLASS release."
-    ewarn ""
 	einfo "unpacking DEB File"
 	cd ${WORKDIR}
 	# ar x ${DISTDIR}/${A}
