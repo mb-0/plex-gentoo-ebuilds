@@ -1,2 +1,2 @@
-# plex-gentoo-ebuilds
+# plexmediaserver
 plexmediaserver ebuilds for gentoo
