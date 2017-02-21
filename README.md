@@ -1,3 +1,5 @@
+# Latest: plex-media-server 1.4.2.3400
+
 # What
 This is not an official gentoo package, only a snapshot from my local overlay that I ended up maintaining after waiting for new plex-media-server ebuilds from megacoffee and alike.
 
