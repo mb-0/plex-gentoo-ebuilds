@@ -15,8 +15,11 @@ Here's how:
 1. Add this repo to your /etc/portage/repos.conf/local.conf
 
 	[plex-media-ebuilds]
+	
 	location = /usr/local/plex-gentoo-ebuilds
+	
 	masters = gentoo
+	
 	auto-sync = no
 
 2. cd /usr/local; git clone https://github.com/mb-0/plex-gentoo-ebuilds.git
