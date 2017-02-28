@@ -1,18 +1,14 @@
 # Latest: plex-media-server 1.4.2.3400
 
 # What
-This is an unofficial gentoo ebuild, only a snapshot from my local overlay that I ended up maintaining after waiting for new plex-media-server ebuilds from megacoffee and alike.
+This is a snapshot of my local overlay I ended up maintaining after waiting for new plex-media-server ebuilds from official ebuild factories.
 
-There is an official gentoo build for plex now, look at: https://gitweb.gentoo.org/repo/gentoo.git/tree/media-tv/plex-media-server. Also, there are bunch of repos with plex in them.
-
-# Why
-Easy to do, and I'm usually fast in running into new version being available, up my ebuilds, update my box, git diff, commit, push. Feel free to grab.
+You may want to look at official repositories before playing with this one. 
 
 # How
-Ideally this can function as a local repository for your gentoo.
-Here's how:
+Brave enough? Ideally this can function as a local repository for your gentoo:
 
-1. Add this repo to your /etc/portage/repos.conf/local.conf
+1. Add this repo to your /etc/portage/repos.conf/local.conf:
 
    [mb0plex]  
    location = /usr/local/plex-gentoo-ebuilds  
