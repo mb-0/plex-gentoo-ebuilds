@@ -14,19 +14,14 @@ Here's how:
 
 1. Add this repo to your /etc/portage/repos.conf/local.conf
 
-	[plex-media-ebuilds]
-	
-	location = /usr/local/plex-gentoo-ebuilds
-	
-	masters = gentoo
-	
-	auto-sync = no
+   [mb0plex]  
+   location = /usr/local/plex-gentoo-ebuilds  
+   masters = gentoo  
+   auto-sync = no  
 
 2. cd /usr/local; git clone https://github.com/mb-0/plex-gentoo-ebuilds.git
 3. chown -R portage:portage /usr/local/plex-gentoo-ebuilds
-4. emerge -av plex-media-server
-
-(will need some time on my end to test this).
+4. emerge -av plex-media-server::mb0plex
 
 # Thanks
 Work is based on megacoffee initial ebuilds, many thanks for that!
