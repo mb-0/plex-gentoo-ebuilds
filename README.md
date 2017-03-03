@@ -1,4 +1,4 @@
-# Latest: plex-media-server 1.4.2.3400
+# Latest: plex-media-server 1.4.3.3433
 
 # What
 This is a snapshot of my local overlay I ended up maintaining after waiting for new plex-media-server ebuilds from official ebuild factories.
