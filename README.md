@@ -1,4 +1,4 @@
-# Latest: plex-media-server 1.4.3.3433
+# Latest: plex-media-server 1.5.1.3520-ed60c70d6 (March 22, 2017)
 
 # What
 This is a snapshot of my local overlay I ended up maintaining after waiting for new plex-media-server ebuilds from official ebuild factories.
@@ -20,7 +20,8 @@ Brave enough? Ideally this can function as a local repository for your gentoo:
 4. emerge -av plex-media-server::mb0plex
 
 # Thanks
-Work is based on megacoffee initial ebuilds, many thanks for that!
+Initial work is based on megacoffee initial ebuilds, many thanks for that!
+Restuctured a bit to match Gentoo Portage version (act as one of those but newer).
 
 # License
 Plex is plex.
