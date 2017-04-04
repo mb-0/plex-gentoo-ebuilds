@@ -89,7 +89,7 @@ src_install() {
 pkg_postinst() {
 	einfo ""
 	einfo "This is Plex Media Server Linux / Ubuntu 64-Bit."
-    einfo "Version: 1.5.3.3580-4b377d295, April 2, 2017, Plex Pass Only."
+    einfo "Version: 1.5.3.3580-4b377d295, April 2, 2017."
     einfo ""
 	einfo "Changes are described in the Plex Release Announcement forums:"
     einfo "https://forums.plex.tv/discussion/62832/plex-media-server/#latest"
