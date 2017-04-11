@@ -1,7 +1,5 @@
-# Latest: Plex Media Server 1.5.3
-Version: 1.5.3.3580-4b377d295, April 2, 2017.
-
-"Plex Media Server 1.5.3 is now available to everyone."
+# Latest: Plex Media Server 1.5.4
+Version: 1.5.4.3596-0d2d8c2be, April 4, 2017.
 
 Note: for Plex Pass releases, you need to have an active Plex Pass subscription.
 Updating to a plex pass release unless you have an active subscription is not only bad to do, but can be dangerous as likely you won't be able to use the release anyway, but downgrading is not deeply tested.
