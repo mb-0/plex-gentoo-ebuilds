@@ -1,4 +1,4 @@
-# Latest: Plex Media Server 1.6.0 (PLEX PASS)
+# Latest: Plex Media Server 1.6.1
 Version: 1.6.1.3722-4955e31cf Public Release. April 27, 2017
 Changelog: https://forums.plex.tv/discussion/comment/1427577#Comment_1427577
 
