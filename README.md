@@ -1,4 +1,4 @@
-# Latest: Plex Media Server 1.7.1 Plex Pass Only
+# Latest: Plex Media Server 1.7.2 Plex Pass Only
 Version: 1.7.2.3878-8088811b8 Plex Pass Only Release. May 27, 2017"
 Changelog: https://forums.plex.tv/discussion/comment/1448363#Comment_1448363
 
