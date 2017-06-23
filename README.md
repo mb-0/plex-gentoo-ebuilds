@@ -1,11 +1,8 @@
-# Latest: Plex Media Server 1.7.3 Plex Pass Only
-Version: 1.7.3.3937-70f781325 Plex Pass Only Release. June 8, 2017
-Changelog: https://forums.plex.tv/discussion/comment/1459315#Comment_1459315
+# Latest Plex Public: Plex Media Server 1.5.7
+Version: 1.5.7.4016-25d94bad9 PUBLIC Release. June 22, 2017
+Changelog: https://forums.plex.tv/discussion/comment/1464807#Comment_1464807
 
-Note: for Plex Pass releases, you need to have an active Plex Pass subscription.
-Updating to a plex pass release unless you have an active subscription is not only bad to do, but can be dangerous as likely you won't be able to use the release anyway, but downgrading is not deeply tested.
-
-You have been warned.
+For Plex Pass releases, please check the plexpass branch.
 
 # What
 This is a snapshot of my local overlay I ended up maintaining after waiting for new plex-media-server ebuilds from official ebuild factories.
