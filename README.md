@@ -1,7 +1,3 @@
-# Latest Public: Plex Media Server 1.5.7
-Version: 1.5.7.4016-25d94bad9 PUBLIC Release. June 22, 2017
-Changelog: https://forums.plex.tv/discussion/comment/1464807#Comment_1464807 
-
 # Latest Plex Pass: Plex Media Server 1.7.3 Plex Pass Only
 Version: 1.7.3.3937-70f781325 Plex Pass Only Release. June 8, 2017
 Changelog: https://forums.plex.tv/discussion/comment/1459315#Comment_1459315
@@ -14,12 +10,6 @@ You have been warned.
 # What
 This is a snapshot of my local overlay I ended up maintaining after waiting for new plex-media-server ebuilds from official ebuild factories.
 You may want to look at official repositories before playing with this one. 
-
-# How is this repo structured?
-- The branch master includes Plex PUBLIC only.
-- The branch plexpublic inclised Plex PUBLIC only (this is merged to master).
-- The branch plexpass includes Plex Pass releases only.
-- The branch all includes both Plex PUBLIC and Plex PASS.
 
 # How
 Brave enough?
