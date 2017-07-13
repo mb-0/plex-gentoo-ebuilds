@@ -1,6 +1,6 @@
-# Latest Plex Pass: Plex Media Server 1.7.5 Plex Pass Only
-Version: 1.7.5.4035-313f93718 Plex Pass Only Release. June 28, 2017
-Changelog: http://forums.plex.tv/discussion/comment/1468498#Comment_1468498
+# Latest Plex Pass: Plex Media Server 1.7.6 Plex Pass Only
+Version: 1.7.6.4058-8fa494d15 Plex Pass Only Release. July 5, 2017
+Changelog: http://forums.plex.tv/discussion/comment/1476678#Comment_1476678
 
 Note: for Plex Pass releases, you need to have an active Plex Pass subscription.
 Updating to a plex pass release unless you have an active subscription is not only bad to do, but can be dangerous as likely you won't be able to use the release anyway, but downgrading is not deeply tested.
