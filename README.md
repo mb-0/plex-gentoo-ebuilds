@@ -1,6 +1,6 @@
-# Latest Plex Public: Plex Media Server 1.5.7
-Version: 1.5.7.4016-25d94bad9 PUBLIC Release. June 22, 2017
-Changelog: https://forums.plex.tv/discussion/comment/1464807#Comment_1464807
+# Latest Plex Public: Plex Media Server 1.8.1
+Version: 1.8.1.4139-c789b3fbb PUBLIC Release. Aug 8, 2017
+Changelog: https://forums.plex.tv/discussion/comment/1503565#Comment_1503565
 
 For Plex Pass releases, please check the plexpass branch.
 
