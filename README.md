@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Latest Plex Public: Plex Media Server 1.8.2
+=======
+# Latest Plex Pass: Plex Media Server 1.9.1 
+Version: 1.9.1.4272-b207937f1 Public Release. September 19, 2017
+Changelog: https://forums.plex.tv/discussion/comment/1519625#Comment_1519625
+>>>>>>> plexpass
 
 Version: 1.8.2.4209-b1d4aa012 PUBLIC Release. Aug 10, 2017
 Changelog: https://forums.plex.tv/discussion/comment/1510687#Comment_1510687
@@ -10,7 +16,10 @@ This is a snapshot of my local overlay I ended up maintaining after waiting for 
 You may want to look at official repositories before playing with this one. 
 
 # How
-Brave enough? Ideally this can function as a local repository for your gentoo:
+Brave enough?
+Clone this repo, and optionally checkout the branch best fit for you.
+
+Ideally this can function as a local repository for your gentoo.
 
 1. Add this repo to your /etc/portage/repos.conf/local.conf:
 
