@@ -88,7 +88,7 @@ pkg_postinst() {
 	einfo ""
 	einfo "This is Plex Media Server Linux / Ubuntu 64-Bit."
     einfo "1.9.4.4290-1bf240a65 October 5, 2017."
-    einfo "Plex Pass release"
+    einfo "Public release"
     einfo ""
 	einfo "Changes are described in the Plex Release Announcement forums:"
 	einfo "https://forums.plex.tv/discussion/comment/1533737#Comment_1533737"

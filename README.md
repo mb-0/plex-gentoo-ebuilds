@@ -1,4 +1,4 @@
-# Latest Plex Pass: Plex Media Server 1.9.4 Plex Pass release
+# Latest Plex Pass: Plex Media Server 1.9.4 Public Release
 Version: 1.9.4.4290-1bf240a65 October 5, 2017.
 Changelog: https://forums.plex.tv/discussion/comment/1533737#Comment_1533737
 
