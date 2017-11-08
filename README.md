@@ -1,6 +1,9 @@
-# Latest Plex Pass: Plex Media Server 1.9.6.4401 BETA Plex Pass Only Release
-Version: 1.9.6.4401-53fa66811 October 27, 2017.
-Changelog: https://forums.plex.tv/discussion/comment/1549008/#Comment_1549008
+# NOTE: this latest release seems to be breaking remote access.
+# Should you care about that, please DO NOT INSTALL
+
+# Latest Plex Pass: Plex Media Server 1.9.6.4429 BETA Plex Pass Only Release
+Version: 1.9.6.4429-23901a099 November 6, 2017.
+Changelog: https://forums.plex.tv/discussion/comment/1553832#Comment_1553832
 
 Note: for Plex Pass releases, you need to have an active Plex Pass subscription.
 Updating to a plex pass release unless you have an active subscription is not only bad to do, but can be dangerous as likely you won't be able to use the release anyway, but downgrading is not deeply tested.
