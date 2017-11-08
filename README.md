@@ -1,6 +1,3 @@
-# NOTE: this latest release seems to be breaking remote access.
-# Should you care about that, please DO NOT INSTALL
-
 # Latest Plex Pass: Plex Media Server 1.9.6.4429 BETA Plex Pass Only Release
 Version: 1.9.6.4429-23901a099 November 6, 2017.
 Changelog: https://forums.plex.tv/discussion/comment/1553832#Comment_1553832
