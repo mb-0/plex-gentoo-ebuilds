@@ -1,4 +1,4 @@
-# Latest: Plex Media Server 1.11.3.4793 (HEAD DETACHED AT 5F9F03A) 5F9F03A BUMP TO 1.11.2.4772 Release
+# Latest: Plex Media Server 1.11.3.4793 PLEXPASS Release
 Version: 1.11.3.4793-482972920 February 13, 2018
 Changelog: https://forums.plex.tv/discussion/comment/1615546#Comment_1615546
 
