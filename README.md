@@ -1,4 +1,4 @@
-# Latest: Plex Media Server 1.13.0.5023 PLEXPASS Release
+# Latest: Plex Media Server 1.13.0.5023 PUBLIC Release
 Version: 1.13.0.5023-31d3c0c65 May 4, 2018
 Changelog: https://forums.plex.tv/discussion/comment/1665416#Comment_1665416
 
