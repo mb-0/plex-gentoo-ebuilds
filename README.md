@@ -1,6 +1,6 @@
-# Latest: Plex Media Server 1.13.5.5291 PUBLIC Release
-Version: 1.13.5.5291-6fa5e50a8 July 24, 2018
-Changelog: https://forums.plex.tv/t/plex-media-server/30447/228
+# Latest: Plex Media Server 1.13.6.5339 PUBLIC Release
+Version: 1.13.6.5339-115f087d6 August 20, 2018
+Changelog: https://forums.plex.tv/t/plex-media-server/30447/230
 
 Note: for Plex Pass releases, you need to have an active Plex Pass subscription.
 Updating to a plex pass release unless you have an active subscription is not only bad to do, but can be dangerous as likely you won't be able to use the release anyway, but downgrading is not deeply tested.
