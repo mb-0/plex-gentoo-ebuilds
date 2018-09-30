@@ -1,4 +1,4 @@
-# Latest: Plex Media Server 1.13.8.5395 PLEXPASS Release
+# Latest: Plex Media Server 1.13.8.5395 PUBLIC Release
 Version: 1.13.8.5395-10d48da0d September 21, 2018.
 Changelog: https://forums.plex.tv/t/plex-media-server/30447/234
 
