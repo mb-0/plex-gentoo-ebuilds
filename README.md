@@ -1,5 +1,5 @@
-# Latest: Plex Media Server 1.14.0.5468 PLEXPASS Release
-Version: 1.14.0.5468-5a0183d2c November 20, 2018
+# Latest: Plex Media Server 1.14.0.5470 PLEXPASS Release
+Version: 1.14.0.5470-9d51fdfaa November 23, 2018
 Changelog: https://forums.plex.tv/t/plex-media-server/30447/239
 
 Note: for Plex Pass releases, you need to have an active Plex Pass subscription.
