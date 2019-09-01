@@ -28,6 +28,18 @@ Ideally this can function as a local repository for your gentoo.
 3. chown -R portage:portage /usr/local/plex-gentoo-ebuilds
 4. emerge -av plex-media-server::mb0plex
 
+# Additional stuff required by plex
+When you see stuff like:
+``
+ERROR	[Transcoder] [eac3_eae @ 0x150d760] EAE timeout! EAE not running, or wrong folder? Could not read ‘/tmp/pms-66181c4b-c3d6-4b37-b6a2-67b8556d1c86/EasyAudioEncoder/Convert to WAV (to 8ch or less)/030kau81ld0a3bf2eyuxzufr_626-1-21.wav’
+``
+in your plex media server log, you will need to:
+``
+echo   "fs.inotify.max_user_watches=65536" >> /etc/sysctl.conf
+sysctl -p
+``
+(https://forums.plex.tv/t/any-video-with-eac3-audio-fails-to-play/207266/5)
+
 # Thanks
 Initial work is based on megacoffee initial ebuilds, many thanks for that!
 Restuctured a bit to match Gentoo Portage version (act as one of those but newer).
