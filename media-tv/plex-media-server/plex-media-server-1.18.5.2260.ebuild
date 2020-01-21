@@ -44,7 +44,7 @@ src_install() {
 	cp -rp usr/ "${ED}" || die
 
 	# Move the config to the correct place
-	local CONFIG_VANILLA="${S}/etc/default/plexmediaserver"
+	local CONFIG_VANILLA="${FILESDIR}/etc/default/plexmediaserver"
 	local CONFIG_PATH="/etc/${_SHORTNAME}"
 	dodir "${CONFIG_PATH}"
 	insinto "${CONFIG_PATH}"
