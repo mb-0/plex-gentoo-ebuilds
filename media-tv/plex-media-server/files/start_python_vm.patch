@@ -1,0 +1,9 @@
+--- a/usr/lib/plexmediaserver/Resources/start.sh	2020-04-07 16:17:20.885604536 +0200
++++ b/usr/lib/plexmediaserver/Resources/start.sh	2020-04-07 16:19:12.667604110 +0200
+@@ -8,4 +8,6 @@
+ export LC_ALL="en_US.UTF-8"
+ export LANG="en_US.UTF-8"
+ ulimit -s 3000
++# Activate python virtualenv
++${PLEX_MEDIA_SERVER_HOME}/Resources/Python/bin/activate
+ ${PLEX_MEDIA_SERVER_HOME}/Plex\ Media\ Server
