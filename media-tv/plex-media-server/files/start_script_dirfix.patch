@@ -1,0 +1,16 @@
+--- a/usr/lib/plexmediaserver/Resources/start.sh	2020-04-07 15:37:02.901613760 +0200
++++ b/usr/lib/plexmediaserver/Resources/start/sh	2020-04-07 15:44:13.643612117 +0200
+@@ -2,10 +2,10 @@
+ #SCRIPTPATH=$(dirname $(python -c 'import sys,os;print os.path.realpath(sys.argv[1])' $0))
+ SCRIPT=$(readlink -f $0)
+ SCRIPTPATH=`dirname ${SCRIPT}`
+-export LD_LIBRARY_PATH="${SCRIPTPATH}"
+-export PLEX_MEDIA_SERVER_HOME="${SCRIPTPATH}"
++export LD_LIBRARY_PATH="`dirname ${SCRIPTPATH}`"
++export PLEX_MEDIA_SERVER_HOME="`dirname ${SCRIPTPATH}`"
+ export PLEX_MEDIA_SERVER_MAX_PLUGIN_PROCS=6
+ export LC_ALL="en_US.UTF-8"
+ export LANG="en_US.UTF-8"
+ ulimit -s 3000
+-./Plex\ Media\ Server
++${PLEX_MEDIA_SERVER_HOME}/Plex\ Media\ Server
