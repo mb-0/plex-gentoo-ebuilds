@@ -1,6 +1,6 @@
-# Latest: Plex Media Server 1.20.0.3133 PLEXPASS Release
-Version: 1.20.0.3133-fede5bdc7 July 24, 2020
-Changelog: https://forums.plex.tv/search?q=1.20.0.3133%20tags%3Arelease-announcements
+# Latest: Plex Media Server 1.20.0.3181 PLEXPASS Release
+Version: 1.20.0.3181-0800642ec August 04, 2020
+Changelog: https://forums.plex.tv/search?q=1.20.0.3181%20tags%3Arelease-announcements
 
 Note: for Plex Pass releases, you need to have an active Plex Pass subscription.
 Updating to a plex pass release unless you have an active subscription is not only bad to do, but can be dangerous as likely you won't be able to use the release anyway, but downgrading is not deeply tested.
