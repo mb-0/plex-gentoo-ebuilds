@@ -7,6 +7,4 @@
 +# Add gentoo profile as version
 +GENTOO_PROFILE="`readlink /etc/portage/make.profile`"
 +export PLEX_MEDIA_SERVER_INFO_PLATFORM_VERSION="${GENTOO_PROFILE#.*/profiles/}"
- # Activate python virtualenv
- ${PLEX_MEDIA_SERVER_HOME}/Resources/Python/bin/activate
  ${PLEX_MEDIA_SERVER_HOME}/Plex\ Media\ Server

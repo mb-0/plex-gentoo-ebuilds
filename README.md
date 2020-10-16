@@ -7,6 +7,28 @@ Updating to a plex pass release unless you have an active subscription is not on
 
 You have been warned.
 
+# Python 2.7 warning
+You may have ran into the following message while emerging anything plex-media-server lately on gentoo:
+```
+- media-tv/plex-media-server-1.20.1.3252::mb0plex (masked by: package.mask)
+/usr/portage/profiles/package.mask:
+# Michał Górny <mgorny@gentoo.org> (2020-09-20)
+# Bundles vulnerable version of Python 2.7, also boost and other
+# libraries in undetermined versions.  Simultaneously blocks removal
+# of Python 2.7 packages.
+# Removal in 30 days.  Bug #735396.
+```
+
+The ::mb0plex builds remove all wiring between gentoo system-wide python and plex's own embedded python packages, which is as much as we can do until Plex gets rid of its legacy Python 2.7 dependency.
+
+To unmask, please add the following to your /etc/portage/package.unmask:
+```
+# mb0plex (no dependency on system-wide gentoo python)
+media-tv/plex-media-server::mb0plex
+```
+
+Following this, you should be OK to install/upgrade.
+
 # What
 This is a snapshot of my local overlay I ended up maintaining after waiting for new plex-media-server ebuilds from official ebuild factories.
 You may want to look at official repositories before playing with this one. 

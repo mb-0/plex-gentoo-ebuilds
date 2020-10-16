@@ -2,8 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-PYTHON_COMPAT=( python2_7 )
-inherit eutils systemd unpacker pax-utils python-single-r1
+#PYTHON_COMPAT=( python3_6 )
+inherit eutils systemd unpacker pax-utils
 
 HASH="f1f08d65b"
 DT="October 14, 2020"
@@ -19,30 +19,20 @@ DESCRIPTION="A free media library that is intended for use with a plex client."
 HOMEPAGE="http://www.plex.tv/"
 SRC_URI="
 	amd64? ( ${URI}/${_FULL_VERSION}/debian/plexmediaserver_${_FULL_VERSION}_amd64.deb )"
-
 SLOT="0"
 LICENSE="Plex"
 RESTRICT="bindist strip"
 KEYWORDS="-* ~amd64 ~x86"
-REQUIRED_USE="${PYTHON_REQUIRED_USE}"
-
-DEPEND="
-	$(python_gen_cond_dep '
-		dev-python/virtualenv[${PYTHON_MULTI_USEDEP}]
-	')"
 BDEPEND="dev-util/patchelf"
-
 RDEPEND="
 	acct-group/plex
 	acct-user/plex
-	net-dns/avahi
-	${PYTHON_DEPS}"
+	net-dns/avahi"
 
 QA_DESKTOP_FILE="usr/share/applications/plexmediamanager.desktop"
 QA_PREBUILT="*"
 QA_MULTILIB_PATHS=(
 	"usr/lib/${_APPNAME}/.*"
-	"usr/lib/${_APPNAME}/Resources/Python/lib/python2.7/.*"
 )
 
 BINS_TO_PAX_MARK=(
@@ -53,7 +43,6 @@ BINS_TO_PAX_MARK=(
 S="${WORKDIR}"
 PATCHES=(
     "${FILESDIR}/start_script_dirfix.patch"
-	"${FILESDIR}/start_python_vm.patch"
 	"${FILESDIR}/add_gentoo_profile_as_platform_version_mb.patch"
 	"${FILESDIR}/plexmediamanager.desktop.new.patch"
 )
@@ -110,12 +99,6 @@ src_install() {
 	for f in "${BINS_TO_PAX_MARK[@]}"; do
 		pax-mark m "${f}"
 	done
-
-	einfo "Configuring virtualenv"
-	virtualenv -v --no-pip --no-setuptools --no-wheel "${ED}"/usr/lib/plexmediaserver/Resources/Python || die
-	pushd "${ED}"/usr/lib/plexmediaserver/Resources/Python &>/dev/null || die
-	find . -type f -exec sed -i -e "s#${D}##g" {} + || die
-	popd &>/dev/null || die
 }
 
 pkg_postinst() {
