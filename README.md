@@ -1,13 +1,10 @@
-# Latest: Plex Media Server 1.20.3.3437 PLEXPASS Release
+# Latest: Plex Media Server 1.20.3.3437
 Version: 1.20.3.3437-f1f08d65b October 14, 2020
 Changelog: https://forums.plex.tv/search?q=1.20.3.3437%20tags%3Arelease-announcements
 
-Note: for Plex Pass releases, you need to have an active Plex Pass subscription.
-Updating to a plex pass release unless you have an active subscription is not only bad to do, but can be dangerous as likely you won't be able to use the release anyway, but downgrading is not deeply tested.
+For a complete plex experience, you may need an active Plex Pass subscription.
 
-You have been warned.
-
-# Python 2.7 warning
+# Gentoo vs Python 2.7 warning
 You may have ran into the following message while emerging anything plex-media-server lately on gentoo:
 ```
 - media-tv/plex-media-server-1.20.1.3252::mb0plex (masked by: package.mask)
@@ -63,10 +60,11 @@ sysctl -p
 (https://forums.plex.tv/t/any-video-with-eac3-audio-fails-to-play/207266/5)
 
 # Thanks
-Initial work is based on megacoffee initial ebuilds, many thanks for that!
-Restuctured a bit to match Gentoo Portage version (act as one of those but newer).
+Initial work is based on megacoffee initial ebuilds.
+I merged a bunch from the upstream Gentoo repo for Py 2.7 compat, but removed almost all of that when 2.7 offboarding started.
 
 # Legal
 Plex is plex.
 Ebuild is opensource.
+Gentoo: break it and leave.
 No warranty, or guarantee of any kind that this will work for you, or that it won't blow up your kitchen. Beware.
