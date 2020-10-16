@@ -1,0 +1,10 @@
+--- a/usr/lib/plexmediaserver/Resources/start.sh	2020-04-07 16:26:29.418602444 +0200
++++ a/usr/lib/plexmediaserver/Resources/start.sh	2020-04-07 16:28:03.341602085 +0200
+@@ -8,6 +8,9 @@
+ export LC_ALL="en_US.UTF-8"
+ export LANG="en_US.UTF-8"
+ ulimit -s 3000
++# Add gentoo profile as version
++GENTOO_PROFILE="`readlink /etc/portage/make.profile`"
++export PLEX_MEDIA_SERVER_INFO_PLATFORM_VERSION="${GENTOO_PROFILE#.*/profiles/}"
+ ${PLEX_MEDIA_SERVER_HOME}/Plex\ Media\ Server

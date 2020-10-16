@@ -1,11 +1,33 @@
-# Latest: Plex Media Server 1.14.0.5470 PUBLIC Release
-Version: 1.14.0.5470-9d51fdfaa November 23, 2018
-Changelog: https://forums.plex.tv/t/plex-media-server/30447/239
+# Latest: Plex Media Server 1.20.3.3437 PLEXPASS Release
+Version: 1.20.3.3437-f1f08d65b October 14, 2020
+Changelog: https://forums.plex.tv/search?q=1.20.3.3437%20tags%3Arelease-announcements
 
 Note: for Plex Pass releases, you need to have an active Plex Pass subscription.
 Updating to a plex pass release unless you have an active subscription is not only bad to do, but can be dangerous as likely you won't be able to use the release anyway, but downgrading is not deeply tested.
 
 You have been warned.
+
+# Python 2.7 warning
+You may have ran into the following message while emerging anything plex-media-server lately on gentoo:
+```
+- media-tv/plex-media-server-1.20.1.3252::mb0plex (masked by: package.mask)
+/usr/portage/profiles/package.mask:
+# Michał Górny <mgorny@gentoo.org> (2020-09-20)
+# Bundles vulnerable version of Python 2.7, also boost and other
+# libraries in undetermined versions.  Simultaneously blocks removal
+# of Python 2.7 packages.
+# Removal in 30 days.  Bug #735396.
+```
+
+The ::mb0plex builds remove all wiring between gentoo system-wide python and plex's own embedded python packages, which is as much as we can do until Plex gets rid of its legacy Python 2.7 dependency.
+
+To unmask, please add the following to your /etc/portage/package.unmask:
+```
+# mb0plex (no dependency on system-wide gentoo python)
+media-tv/plex-media-server::mb0plex
+```
+
+Following this, you should be OK to install/upgrade.
 
 # What
 This is a snapshot of my local overlay I ended up maintaining after waiting for new plex-media-server ebuilds from official ebuild factories.
@@ -27,6 +49,18 @@ Ideally this can function as a local repository for your gentoo.
 2. cd /usr/local; git clone https://github.com/mb-0/plex-gentoo-ebuilds.git
 3. chown -R portage:portage /usr/local/plex-gentoo-ebuilds
 4. emerge -av plex-media-server::mb0plex
+
+# Additional stuff required by plex
+When you see stuff like:
+``
+ERROR	[Transcoder] [eac3_eae @ 0x150d760] EAE timeout! EAE not running, or wrong folder? Could not read ‘/tmp/pms-66181c4b-c3d6-4b37-b6a2-67b8556d1c86/EasyAudioEncoder/Convert to WAV (to 8ch or less)/030kau81ld0a3bf2eyuxzufr_626-1-21.wav’
+``
+in your plex media server log, you will need to:
+``
+echo   "fs.inotify.max_user_watches=65536" >> /etc/sysctl.conf
+sysctl -p
+``
+(https://forums.plex.tv/t/any-video-with-eac3-audio-fails-to-play/207266/5)
 
 # Thanks
 Initial work is based on megacoffee initial ebuilds, many thanks for that!
