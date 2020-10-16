@@ -1,5 +1,5 @@
-# Latest: Plex Media Server 1.20.3.3437
-Version: 1.20.3.3437-f1f08d65b October 14, 2020
+# Plex Media Server 1.20.3.3437
+Version: 1.20.3.3437-f1f08d65b (October 14, 2020)
 Changelog: https://forums.plex.tv/search?q=1.20.3.3437%20tags%3Arelease-announcements
 
 For a complete plex experience, you may need an active Plex Pass subscription.
@@ -9,18 +9,16 @@ This is a snapshot of my local overlay I ended up maintaining after waiting for 
 You may want to look at official repositories before playing with this one. 
 
 # How
-Brave enough?
 Clone this repo, and optionally checkout the branch best fit for you.
-
-Ideally this can function as a local repository for your gentoo.
+This functions as a gentoo local repo.
 
 1. Add this repo to your /etc/portage/repos.conf/local.conf:
-
+```   
    [mb0plex]  
    location = /usr/local/plex-gentoo-ebuilds  
    masters = gentoo  
    auto-sync = no  
-
+```
 2. cd /usr/local; git clone https://github.com/mb-0/plex-gentoo-ebuilds.git
 3. chown -R portage:portage /usr/local/plex-gentoo-ebuilds
 4. emerge -av plex-media-server::mb0plex
