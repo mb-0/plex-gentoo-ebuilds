@@ -1,7 +1,7 @@
-# Plex Media Server 1.20.3.3483
-Version: 1.20.3.3483-211702a9f (October 22, 2020)
+# Plex Media Server 1.20.4.3508
+Version: 1.20.4.3508-6abbd541f (October 27, 2020)
 
-Changelog: https://forums.plex.tv/search?q=1.20.3.3483%20tags%3Arelease-announcements
+Changelog: https://forums.plex.tv/search?q=1.20.4.3508%20tags%3Arelease-announcements
 
 For a complete plex experience, you may need an active Plex Pass subscription.
 
