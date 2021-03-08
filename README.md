@@ -1,7 +1,7 @@
-# Plex Media Server 1.22.0.4145
-Version: 1.22.0.4145-0af3a4016 (March 04, 2021)
+# Plex Media Server 1.22.0.4157
+Version: 1.22.0.4157-d1699ac4a (March 07, 2021)
 
-Changelog: https://forums.plex.tv/search?q=1.22.0.4145%20tags%3Arelease-announcements
+Changelog: https://forums.plex.tv/search?q=1.22.0.4157%20tags%3Arelease-announcements
 
 For a complete plex experience, you may need an active Plex Pass subscription.
 
