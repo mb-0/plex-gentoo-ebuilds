@@ -28,7 +28,6 @@ RDEPEND="
 	acct-group/plex
 	acct-user/plex
 	net-dns/avahi"
-QA_DESKTOP_FILE="usr/share/applications/plexmediamanager.desktop"
 QA_PREBUILT="*"
 QA_MULTILIB_PATHS=(
 	"usr/lib/${_APPNAME}/.*"
@@ -44,7 +43,6 @@ S="${WORKDIR}"
 PATCHES=(
     "${FILESDIR}/start_script_dirfix.patch"
 	"${FILESDIR}/add_gentoo_profile_as_platform_version_mb.patch"
-	"${FILESDIR}/plexmediamanager.desktop.new.patch"
 )
 
 src_unpack() {
@@ -88,9 +86,6 @@ src_install() {
 	# Mask Plex libraries so that revdep-rebuild doesn't try to rebuild them.
 	# Plex has its own precompiled libraries.
 	_mask_plex_libraries_revdep
-
-	# Fix RPATH
-	patchelf --force-rpath --set-rpath '$ORIGIN:$ORIGIN/../../../../../../lib' "${ED}"/usr/lib/plexmediaserver/Resources/Python/lib/python2.7/lib-dynload/_codecs_kr.so|| die
 
 	# Install systemd service file
 	systemd_newunit "${FILESDIR}/systemd/${PN}.service" "${PN}.service"
