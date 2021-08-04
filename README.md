@@ -1,7 +1,7 @@
-# Plex Media Server 1.23.6.4881
-Version: 1.23.6.4881-e2e58f321 (July 29, 2021)
+# Plex Media Server 1.24.0.4897
+Version: 1.24.0.4897-411e7667f (August 02, 2021)
 
-Changelog: https://forums.plex.tv/search?q=1.23.6.4881%20tags%3Arelease-announcements
+Changelog: https://forums.plex.tv/search?q=1.24.0.4897%20tags%3Arelease-announcements
 
 For a complete plex experience, you may need an active Plex Pass subscription.
 
