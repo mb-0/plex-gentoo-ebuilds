@@ -1,5 +1,5 @@
-# Plex Media Server 1.26.2.5797
-Version: 1.26.2.5797- ()
+# Plex Media Server 1.30.0.6359
+Version: 1.30.0.6359- ()
 
 Changelog: 
 
